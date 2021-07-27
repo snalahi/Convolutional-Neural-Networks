@@ -1,4 +1,8 @@
 # Convolutional-Neural-Networks
+* => means convolution in neural network and elementwise multiplication in python.
+
+Suppose, we have an input matrix of shape (6x6) and the kernel(filter) applied is of the shape of (3x3). Then the output matrix should calculated as 6x6 = 36 / (3x3) = 36 / 9 = 4. Output shape will be (4x4) matrix.
+
 
 
 
