@@ -17,6 +17,12 @@ Useful hyper-parameters for convolutional neural network are: filter shape, numb
 
 #### Stride implies the step size while moving the filter (kernel) or pooling layer over the original image. If we move on 1 column right and 1 row down with the kernel or pooling layer then stride, s = 1. Similarly, when we step with 2 columns right and 2 rows down, then stride, s = 2.
 
+In case of an image shape such as: 32 x 32 x 3, the last dimension 3 usually denotes the color channel. In most cases the color channel is RGB (Red, Green and Blue) which implies three dimensional image.
+
+As you go through the convolutional neural network build up process, the height and width of the input image (the first two dimensions) => n_H = 32 and n_W = 32 in the above case go down (decrease) and the color channel or the third dimension, n_C = 3 in the above case goes up (increases).
+
+#### Keep in mind that each dimensional value is a parameter in neural network. Which implies to the notion that to learn each data point in an image or any form of input, you need to apply some weights to that data point. And each weight is a parameter. Which means for an image of shape 32 x 32 x 3, the image size is 3072 and so number of parameters will also be 3072 (in the form of weights).
+
 
 
 
